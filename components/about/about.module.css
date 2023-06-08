@@ -1,0 +1,145 @@
+.about {
+  padding: 3rem 4rem;
+  background-color: hsla(223, 48%, 12%, 0.22);
+  backdrop-filter: blur(100px);
+  margin-top: 4rem;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.about h2::before {
+  content: "";
+  width: 5rem;
+  height: 100%;
+  position: absolute;
+  display: block;
+  background-color: var(--secondary);
+  left: -8rem;
+  top: 0;
+}
+
+.about_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about_info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40vw;
+}
+
+.about_info h4 {
+  color: var(--secondary);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.about_info p {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.about_info p span {
+  color: var(--blue);
+}
+
+.about_main > div {
+  width: 35rem;
+  height: 35rem;
+  background-color: var(--bg);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 30px 10px var(--bg);
+}
+
+.about_main > div svg {
+  width: 22rem;
+  height: 22rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .about_main > div {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .about_main > div > svg {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .about_info h4 {
+    font-size: 2.1rem;
+  }
+
+  .about_info p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about_main > div {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .about_main > div > svg {
+    width: 12rem;
+    height: 12rem;
+  }
+  .about_info h4 {
+    font-size: 1.8rem;
+  }
+
+  .about_info p {
+    font-size: 1.2rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .about {
+    padding: 3rem 2rem;
+  }
+  .about h2::before {
+    left: -6.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about_main > div {
+    display: none;
+  }
+  .about_info {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+
+  .about h2 {
+    margin-bottom: 4rem;
+    font-size: 1.7rem;
+  }
+  .about h2::before {
+    left: -5.7rem;
+  }
+}
