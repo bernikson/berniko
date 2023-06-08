@@ -23,5 +23,8 @@
     "react-scroll": "^1.8.9",
     "react-youtube": "^10.1.0",
     "typescript": "5.1.3"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.8"
   }
 }
