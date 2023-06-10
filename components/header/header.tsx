@@ -5,6 +5,7 @@ import Telegram from "@/assets/svgs/telegram";
 import Github from "@/assets/svgs/github";
 import Discord from "@/assets/svgs/discord";
 import Linkedin from "@/assets/svgs/linkedin";
+import { scroller, animateScroll } from "react-scroll";
 
 const Header: React.FC = () => {
   return (
@@ -28,7 +29,15 @@ const Header: React.FC = () => {
           I am <span>Giorgi</span>
         </h1>
         <h2>Full stack Web developer & Web designer.</h2>
-        <button>
+        <button
+          onClick={() =>
+            scroller.scrollTo("projects", {
+              duration: 500,
+              smooth: true,
+              offset: -100,
+            })
+          }
+        >
           Projects <Arrow />
         </button>
       </section>
